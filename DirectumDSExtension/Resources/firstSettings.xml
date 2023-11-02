@@ -1,0 +1,374 @@
+﻿<DevelopmentStudioProperties>
+  <AppServerType value="WebApi" />
+  <AskCredentialsOnClientRun value="False" />
+  <AskCredentialsOnClientRun_Local value="False" />
+  <CodeAnalysis.FxCopPath value="" />
+  <Properties name="CodeCompletionOptions">
+    <CompleteWhenTyping value="False" />
+    <DataUsageCacheEnabled value="True" />
+    <DataUsageCacheItemCount value="500" />
+    <EnableCC value="True" />
+    <InsightEnabled value="True" />
+    <InsightRefreshOnComma value="True" />
+    <KeywordCompletionEnabled value="True" />
+    <TooltipsEnabled value="True" />
+    <TooltipsOnlyWhenDebugging value="False" />
+  </Properties>
+  <SerializedValue name="CodeEditorOptions">
+    <CodeEditorOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <CutCopyWholeLine>false</CutCopyWholeLine>
+      <AllowScrollBelowDocument>true</AllowScrollBelowDocument>
+      <FontFamily>Consolas</FontFamily>
+    </CodeEditorOptions>
+  </SerializedValue>
+  <SerializedValue name="CodeSnippets">
+    <ArrayOfCodeSnippetGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <CodeSnippetGroup>
+        <Snippets>
+          <CodeSnippet>
+            <Name>ctor</Name>
+            <Text>public ${ClassName}(${anchor:parameterList})
+{
+	${refactoring:ctor}
+}</Text>
+            <Description>Constructor</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>for</Name>
+            <Text>for (int ${counter=i} = 0; ${counter} &lt; ${end}; ${counter}++)
+{
+	${Selection}
+}</Text>
+            <Description>for loop</Description>
+            <Keyword>for</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>foreach</Name>
+            <Text>foreach (${var} ${element} in ${collection})
+{
+	${Selection}
+}</Text>
+            <Description>foreach loop</Description>
+            <Keyword>foreach</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>if</Name>
+            <Text>if (${condition})
+{
+	${Selection}
+}</Text>
+            <Description>if statement</Description>
+            <Keyword>if</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>ifelse</Name>
+            <Text>if (${condition})
+{
+	${Selection}
+}
+else
+{
+	${Caret}
+}</Text>
+            <Description>if-else statement</Description>
+            <Keyword>if</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>ism</Name>
+            <Text>internal static ${type=void} ${name=Method}(${anchor:parameterList})
+{
+	${Selection}
+}</Text>
+            <Description>Internal static method</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>prop</Name>
+            <Text>public ${Type=object} ${Property=Property} { get; set; }${Caret}</Text>
+            <Description>Property</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>propdp</Name>
+            <Text>public static readonly DependencyProperty ${name}Property =
+	DependencyProperty.Register("${name}", typeof(${type}), typeof(${ClassName}),
+	                            new FrameworkPropertyMetadata());
+
+public ${type=int} ${name=Property} {
+	get { return (${type})GetValue(${name}Property); }
+	set { SetValue(${name}Property, value); }
+}${Caret}</Text>
+            <Description>Dependency Property</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>propfull</Name>
+            <Text>${type} ${toFieldName(name)};
+
+public ${type=int} ${name=Property}
+{
+	get { return ${toFieldName(name)}; }
+	set { ${toFieldName(name)} = value; }
+}${Caret}</Text>
+            <Description>Property with backing field</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>propg</Name>
+            <Text>public ${Type=object} ${Property=Property} { get; private set; }${Caret}</Text>
+            <Description>Property with private setter</Description>
+            <Keyword>event</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>switch</Name>
+            <Text>switch (${condition})
+{
+	${refactoring:switchbody}
+}</Text>
+            <Description>Switch statement</Description>
+            <Keyword>switch</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>try</Name>
+            <Text>try
+{
+	${Selection}
+}
+catch (Exception ex)
+{
+	${Caret}
+	throw;
+}</Text>
+            <Description>Try-catch statement</Description>
+            <Keyword>try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>trycf</Name>
+            <Text>try
+{
+	${Selection}
+}
+catch (Exception ex)
+{
+	${Caret}
+	throw;
+}
+finally
+{
+	
+}</Text>
+            <Description>Try-catch-finally statement</Description>
+            <Keyword>try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>tryf</Name>
+            <Text>try
+{
+	${Selection}
+}
+finally
+{
+	${Caret}
+}</Text>
+            <Description>Try-finally statement</Description>
+            <Keyword>try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>while</Name>
+            <Text>while (${condition})
+{
+	${Selection}
+}</Text>
+            <Description>while loop</Description>
+            <Keyword>while</Keyword>
+          </CodeSnippet>
+        </Snippets>
+        <Extensions>.cs</Extensions>
+      </CodeSnippetGroup>
+      <CodeSnippetGroup>
+        <Snippets>
+          <CodeSnippet>
+            <Name>DoLoopUn</Name>
+            <Text>Do
+	${Selection}
+Loop Until ${expression}</Text>
+            <Description>Do ... Loop Until statement</Description>
+            <Keyword>Do</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>DoLoopWh</Name>
+            <Text>Do
+	${Selection}
+Loop While ${expression}</Text>
+            <Description>Do ... Loop While statement</Description>
+            <Keyword>Do</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>DoUntil</Name>
+            <Text>Do Until ${expression}
+	${Selection}
+Loop</Text>
+            <Description>Do Until ... Loop statement</Description>
+            <Keyword>Do</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>DoWhile</Name>
+            <Text>Do While ${expression}
+	${Selection}
+Loop</Text>
+            <Description>Do While ... Loop statement</Description>
+            <Keyword>Do</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>For</Name>
+            <Text>For ${counter=i} As ${type=Integer} = ${start=0} To ${end}
+	${Selection}
+Next ${counter}</Text>
+            <Description>For loop</Description>
+            <Keyword>For</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>ForEach</Name>
+            <Text>For Each ${item} As ${type} In ${collection}
+	${Selection}
+Next</Text>
+            <Description>For Each statement</Description>
+            <Keyword>For</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>ForStep</Name>
+            <Text>For ${counter=i} As ${type=Integer} = ${start=0} To ${end} Step ${step=1}
+	${Selection}
+Next ${counter}</Text>
+            <Description>For loop with Step</Description>
+            <Keyword>For</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>If</Name>
+            <Text>If ${condition} Then
+	${Selection}
+End If</Text>
+            <Description>If statement</Description>
+            <Keyword>If</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>IfElse</Name>
+            <Text>If ${condition} Then
+	${Selection}
+Else
+	${Caret}
+End If</Text>
+            <Description>If-Else statement</Description>
+            <Keyword>If</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>IfElseIf</Name>
+            <Text>If ${condition1} Then
+	${Selection}
+ElseIf ${condition2} Then
+	${Caret}
+Else
+
+End If</Text>
+            <Description>If ... ElseIf ... End If statement</Description>
+            <Keyword>If</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>propfull</Name>
+            <Text>Private ${toFieldName(name)} As ${type}
+Public Property ${name=Property} As ${type=Integer}
+	Get
+		Return ${toFieldName(name)}
+	End Get
+	Set(${value=value} As ${type})
+		${toFieldName(name)} = ${value}
+	End Set
+End Property${Caret}</Text>
+            <Description>Property</Description>
+            <Keyword>Property</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>Select</Name>
+            <Text>Select Case ${variable}
+    Case ${case1}
+		${Selection}
+    Case Else
+		${Caret}
+End Select</Text>
+            <Description>Select statement</Description>
+            <Keyword>Select</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>Try</Name>
+            <Text>Try
+	${Selection}
+Catch ${var=ex} As ${Exception=Exception}
+	${Caret}
+	Throw
+End Try</Text>
+            <Description>Try-catch statement</Description>
+            <Keyword>Try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>TryCF</Name>
+            <Text>Try
+	${Selection}
+Catch ${var=ex} As ${Exception=Exception}
+	${Caret}
+	Throw
+Finally
+	
+End Try</Text>
+            <Description>Try-catch-finally statement</Description>
+            <Keyword>Try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>TryF</Name>
+            <Text>Try
+	${Selection}
+Finally
+	${Caret}
+End Try</Text>
+            <Description>Try-finally statement</Description>
+            <Keyword>Try</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>Using</Name>
+            <Text>Using ${var=obj} As ${type}
+	${Selection}
+End Using</Text>
+            <Description>Using statement</Description>
+            <Keyword>Using</Keyword>
+          </CodeSnippet>
+          <CodeSnippet>
+            <Name>While</Name>
+            <Text>While ${condition}
+	${Selection}
+End While</Text>
+            <Description>While statement</Description>
+            <Keyword>While</Keyword>
+          </CodeSnippet>
+        </Snippets>
+        <Extensions>.vb</Extensions>
+      </CodeSnippetGroup>
+    </ArrayOfCodeSnippetGroup>
+  </SerializedValue>
+  <CoreProperties.UILanguage value="ru" />
+  <SerializedValue name="CreateDevelopmentPackagePresenterLastIncludedModules">
+    <ArrayOfGuid xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <guid>1e3ed5f6-46d6-4179-a18e-2d1c563968c4</guid>
+      <guid>e4fe1153-919e-4732-aadc-2c8e9b5c0b5a</guid>
+    </ArrayOfGuid>
+  </SerializedValue>
+  <SerializedValue name="CreateDevelopmentPackagePresenterLastPackageSettings">
+    <DevelopmentPackageCreationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <IsBaseSolutionPackage>false</IsBaseSolutionPackage>
+      <IncludeSources>true</IncludeSources>
+      <IncludeAssemblies>true</IncludeAssemblies>
+      <IsDebugPackage>true</IsDebugPackage>
+    </DevelopmentPackageCreationSettings>
+  </SerializedValue>
+  <CreateDevelopmentPackageWindow_WindowSize value="500,500" />
+ 
+ 

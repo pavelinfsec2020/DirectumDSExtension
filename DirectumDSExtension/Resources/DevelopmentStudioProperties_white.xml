@@ -1,0 +1,74 @@
+﻿<DevelopmentStudioProperties>
+  <CodeAnalysis.FxCopPath value="" />
+  <Properties name="CodeCompletionOptions">
+    <EnableCC value="True" />
+    <TooltipsEnabled value="True" />
+    <TooltipsOnlyWhenDebugging value="False" />
+  </Properties>
+  <SerializedValue name="CodeEditorOptions">
+    <CodeEditorOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <AllowScrollBelowDocument>true</AllowScrollBelowDocument>
+      <FontFamily>Consolas</FontFamily>
+    </CodeEditorOptions>
+  </SerializedValue>
+  <CoreProperties.UILanguage value="ru" />
+  <SerializedValue name="CustomizedHighlightingRules">
+    <ArrayOfCustomizedHighlightingColor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </SerializedValue>
+  <SerializedValue name="DisabledContextActionProviders">
+    <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </SerializedValue>
+  <Properties name="DisplayBindingService">
+    <Array name="ExternalProcesses" />
+  </Properties>
+  <SerializedValue name="EditorViewControl">
+    <EditorViewControlSizes NavigationPanelWidth="*" WorkAreaPanelWidth="4*" TreeHeight="*" PropertyGridHeight="*" />
+  </SerializedValue>
+  <Properties name="ErrorListPad">
+    <ShowErrors value="True" />
+    <ShowMessages value="True" />
+    <ShowWarnings value="True" />
+  </Properties>
+  <Properties name="RecentOpen">
+    <Array name="Files">
+      <Element value="C:\Storage_RX\git_repository\work_izv\Akelon.TestFlow\Akelon.TestFlow.Server\Testing\TestingHandlers.cs" />
+    </Array>
+    <Array name="Projects">
+      <Element value="C:\Storage_RX\git_repository\.sds\SungeroDevelopment.sln" />
+    </Array>
+  </Properties>
+  <SharpDevelop.DefaultFileEncoding value="65001" />
+  <SharpDevelop.FileChangeWatcher.DetectExternalChanges value="True" />
+  <SharpDevelop.LoadDocumentProperties value="True" />
+  <SharpDevelop.LoadPrevProjectOnStartup value="False" />
+  <Array name="SharpDevelop.TaskListTokens">
+    <Element value="HACK" />
+    <Element value="TODO" />
+    <Element value="UNDONE" />
+    <Element value="FIXME" />
+  </Array>
+  <Properties name="SharpDevelop.UI.OutputWindowOptions">
+    <DefaultFont value="[Font: Name=Consolas, Size=10, Units=3, GdiCharSet=1, GdiVerticalFont=False]" />
+    <WordWrap value="True" />
+  </Properties>
+  <SourceAnalysis.StyleCopPath value="" />
+  <SungeroCurrentLanguage value="ru-RU" />
+  <SungeroCurrentSourceContainerGuid value="72bf2859-aa57-42da-a4fb-13d6e266f09e" />
+  <SerializedValue name="SungeroLanguangeOptions">
+    <LanguageOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <AvailableLanguages>
+        <LanguageItem>
+          <Name>en-US</Name>
+          <NeedShowInResourceEditor>true</NeedShowInResourceEditor>
+        </LanguageItem>
+        <LanguageItem>
+          <Name>ru-RU</Name>
+          <NeedShowInResourceEditor>true</NeedShowInResourceEditor>
+        </LanguageItem>
+      </AvailableLanguages>
+    </LanguageOptions>
+  </SerializedValue>
+  <Properties name="WorkbenchMemento">
+    <WindowState value="Maximized" />
+  </Properties>
+</DevelopmentStudioProperties>

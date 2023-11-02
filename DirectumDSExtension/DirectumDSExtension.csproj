@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17EA1267-1579-4D8B-B6BE-395D3CFD4AAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DirectumDSExtension</RootNamespace>
+    <AssemblyName>DirectumDSExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BrightnessTool.cs" />
+    <Compile Include="Models\ColorCode.cs" />
+    <Compile Include="Models\ColorCodeGenerator.cs" />
+    <Compile Include="Models\DirectumExtension.cs" />
+    <Compile Include="Models\Helper.cs" />
+    <Compile Include="Models\HighlightingColorBase.cs" />
+    <Compile Include="Models\LanguageLightColor.cs" />
+    <Compile Include="Models\Logger.cs" />
+    <Compile Include="Models\RichTextBoxExtension.cs" />
+    <Compile Include="Models\SpecialSettingsLightColor.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\ThemeChanger.cs" />
+    <Compile Include="Models\ThemeGenerator.cs" />
+    <Compile Include="Models\ThemeViewer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\.editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevelopmentStudioProperties_white.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\whiteBody.xml" />
+    <None Include="Resources\deleteButton.png" />
+    <None Include="Resources\fullSize.png" />
+    <None Include="Resources\compactSize.png" />
+    <None Include="Resources\resizeBttn.png" />
+    <None Include="Resources\logoDirectum.png" />
+    <None Include="Resources\savedChanges.png" />
+    <None Include="Resources\save3d.png" />
+    <None Include="Resources\107969.png" />
+    <None Include="Resources\changeColor.png" />
+    <None Include="Resources\parameters.png" />
+    <None Include="Resources\propertieCod.png" />
+    <None Include="Resources\brightness.png" />
+    <None Include="Resources\ThemeButton.png" />
+    <None Include="Resources\themeIco.png" />
+    <None Include="Resources\DevelopmentStudioProperties_black.xml" />
+    <None Include="Resources\applyThemeButton.png" />
+    <None Include="Resources\BlackThemePrev.png" />
+    <None Include="Resources\PalitreCodes.png" />
+    <None Include="Resources\theme.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\WhiteThemePrev.png" />
+    <None Include="Resources\colorsContainer.xml" />
+    <None Include="Resources\lastSettings.xml" />
+    <None Include="Resources\firstSettings.xml" />
+    <None Include="Resources\blackBody.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
